@@ -1,0 +1,56 @@
+ #location-map{
+    width: 90vw;
+    height: 75vh;
+    margin:0 auto;
+    padding: 1.2em;
+    background-color: gray;
+}
+
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#location {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #0c3f8c;
+    text-shadow: 2px 2px 4px #999;
+    margin-bottom: 10px;
+}
+
+#location-info {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#location-map {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    #location-info {
+        font-size: 18px;
+    }
+
+    #get-location {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}

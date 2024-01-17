@@ -1,0 +1,217 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #FFFFFF; /* White background */
+
+
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+body.dark { background-color: #292c35; } /* Dark Mode background color */
+
+body.dark h1, #all, body.dark .support a { color: #FFFFFF; } /* Dark Mode text color */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon { color: #e7ff97; } /* Yellow for moon icon in Dark Mode */
+
+.fa-sun { color: #da8804; } /* Orange for sun icon in Dark Mode */
+
+.checkbox-label .ball {
+  background-color: #FFF;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+.checkbox-label .ball {
+  background-color: #FFF;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #98FB98; /* Pastel Green */
+    z-index: 10000;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+}
+
+.logo a img {
+    max-width: 100%;
+    height: 60px;
+    animation: pulse 2s alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-menu a {
+    color: #333333; /* Dark Gray for links */
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.header-menu a:hover {
+    text-decoration: underline overline;
+    color: #FF4D47; /* Red for hover */
+    filter: blur(2px);
+}
+
+.btn {
+    text-decoration: none;
+    color: #98FB98;
+    background: linear-gradient(to right, transparent 0%, transparent 50%, #98FB98 50%, #98FB98 100%);
+    background-blend-mode: overlay;
+	background-size: 200% 100%;
+    background-position: left bottom;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+    letter-spacing: 3px;
+    border: 3px solid #98FB98 ;
+	box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    color: #000000;
+    background-position: right bottom;
+    border: 3px solid #98FB98;
+}
+
+.list-main{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    border: #000000 solid 2px;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.list-main h1{
+    font-size: 3rem;
+    font-family: cursive;
+    margin-bottom: 30px;
+}
+
+.list-main h2{
+    color: #FF4D47;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.list-main p{
+    color: #4756ff;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    line-height: 30px;
+
+}
+
+.list-main button{
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 3px solid #98FB98;
+    background-color: #98FB98;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 10px;
+
+}
+
+.list-main button:hover {
+    background-color: #65C964; 
+    color: #FFFFFF; 
+    border: 3px solid #65C964; 
+}

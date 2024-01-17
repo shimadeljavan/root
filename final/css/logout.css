@@ -1,0 +1,61 @@
+.logout-page {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-big {
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15vh;
+}
+
+#logout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding : 30px 30px;
+    color: #021a1a;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout h3 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    margin-bottom: 1rem;
+}
+
+#logout a { 
+    text-decoration: underline ;
+    font-weight: 900;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    color: #FF4D47;
+}
+
+#logout a:hover { 
+    color: 02a693;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .logout-page {
+        padding:60px 60px;
+    }
+
+    .logo-big {
+        max-width: 250px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 900px) {
+
+
+
+    
+  }

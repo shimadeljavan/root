@@ -1,0 +1,147 @@
+/* Main components are  */
+
+
+.list-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .text-box {
+    background-color: #F2CD5E;
+    text-align: center;
+    padding: 1rem 1rem;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .task-link {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #c6f2ed;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 900;
+    color: #FF4D47;
+    justify-content: center;
+    align-items: center;
+    border:#021a1a 1px solid;
+  }
+ 
+  .task-link i {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    margin: 1rem 1rem;  
+  }
+
+  .task-link:hover {
+    color: #021a1a;
+  }
+
+ .list-todo {
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #F2CD5E;
+    border:#021a1a 3px solid;
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+  
+   .todo {
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    border:#021a1a 1px solid;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 7rem;
+    min-height: 500px;
+  }
+
+  
+  /* task title */
+  .title {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    font-weight: 500px;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  /* Style task description and deadline */
+  .desc,
+  .deadline {
+    background-color: #ffffff;
+    text-align: left;
+  }
+  
+  /* Style the delete button */
+  .todo button {
+    display: inline-block;
+    padding: 15px 15px;
+    cursor: pointer;
+    background-color: #c6f2ed;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 900;
+    color: #FF4D47;
+    height: 60px;
+    width: 120px;
+    justify-self: right;
+  }
+
+  @media only screen and (min-width: 900px) {
+    .display-header {
+      grid-template-columns: 4fr 6fr 1fr;
+      padding: 2rem 1rem;
+      justify-content: end;
+    }
+
+    .text-box {
+      display: grid;
+      grid-template-columns: 4fr 2fr;
+      justify-content: space between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .list-todo {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 1rem;
+      align-items: start;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .list-todo {
+      padding: 2rem 2rem;
+      width: 80vw;
+    }
+    .text-box {
+      width: 80vw;
+    }
+  }
+
+  
+  @media only screen and (min-width: 1600px) {
+    .list-todo {
+      max-width: 1400px;
+    }
+
+    .text-box {
+      max-width: 1400px;
+    }
+    
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <a href="https://github.com/shimadeljavan/todo-list">github link</a>
+    <secttion id="all">
+    <h1>TaskTicker</h1>
+    <section id="task-form-section"
+    >
+        <form id="task-form">
+            <fieldset>
+                <!-- <legend>TaskTicke</legend> -->
+                <p>
+            <label for="name">Task Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+                </p>
+
+                <p>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea><br><br>
+                </p>
+
+                <p>
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline" name="deadline"><br><br>
+                </p>
+
+                <p>
+            <button type="submit" id="submit">Quick Add</button>
+                 </p>
+        </fieldset>
+        </form>
+    </section>
+    <h2>My Missions:</h2>
+    <ul id="task-list">
+        <!-- Tasks will be displayed here using JavaScript -->
+    </ul>
+    </secttion>
+    
+</main>
+    <script src="js/script.js"></script>
+</body>
+</html>

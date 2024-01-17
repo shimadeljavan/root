@@ -1,0 +1,40 @@
+/* See reset.css for general styles */
+
+/* task form */
+
+ #task-form{
+    transition: background 0.2s linear;
+    width: 90vw;
+    margin-bottom: 8rem;
+    margin-top: 1.4rem;
+}
+
+#description {
+    height:25vh;
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    padding: 1rem 1rem;
+  }
+
+
+@media only screen and (min-width: 600px) {
+
+    #task-form {
+        width:80vw;
+      }
+
+    }
+
+    @media only screen and (min-width: 900px){
+         #task-form {
+            width: 50vw;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media only screen and (min-width: 1200px){
+
+
+    }
+
+
+

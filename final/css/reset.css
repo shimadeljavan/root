@@ -1,0 +1,346 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color:#c6f2ed ;
+   font-family: 'Montserrat', sans-serif;
+   color: #021a1a;
+   margin: 0;
+   transition: background 0.2s linear;
+}
+
+h2 {
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    margin-bottom: 20px;
+}
+
+p { 
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95vw;
+    max-width: 1400px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+} 
+
+
+/* Dark Mood */
+
+body.dark {
+    background-color: #021a1a;
+  }
+  
+  body.dark h1,
+  body.dark .support p, h4, a,
+  nav ul li a {
+    color: #ffffff;
+  }
+  
+  
+  body.dark h1,
+  body.dark .support  p, h2, h3,h4, a,
+  nav ul li a {
+    transition: color 0.5s ease-in-out;
+  }
+
+  body.dark header nav ul li a {
+    color: #ffffff; 
+    transition: 0.5s ease-in-out;
+  }
+
+  body.dark header nav ul li a:hover {
+    color: #FF4D47; 
+  }
+
+  
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+.checkbox-label {
+    background-color: #021a1a;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.fa-moon { color: #ffffff; } 
+  
+.fa-sun { color: #F2E205; } 
+  
+.checkbox-label .ball {
+    background-color: #ffffff;
+    width: 30px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+  
+header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+    
+.logo img { 
+    width: 90px;
+    height: auto;
+}
+
+header nav {
+    display: none;
+}
+
+ nav ul {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+}
+
+ nav ul li a {
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+    font-weight: 700; 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+nav ul li a i {
+    font-size: clamp (1.5rem, 4vw, 4rem);
+}
+
+footer { 
+    background-color: #132021bc;
+    width: 100vw;
+    bottom: 0%;
+    position: fixed;
+    padding: 1.6rem 2rem;
+}
+
+footer nav ul li a {
+    color: #ffffff; 
+    transition: 0.5s ease-in-out;
+}
+
+footer nav ul li a:hover {
+    color: #FF4D47;
+}
+
+form { 
+    background-color: #F2CD5E;
+    padding: 1rem 1rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border:#021a1a 3px solid;
+    box-shadow: 10px 20px 10px hwb(180 1% 90% / 0.633);
+}
+
+
+fieldset {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem;
+    border:#021a1a 3px solid;
+}
+
+legend {
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    color: #021a1a;
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+input
+ { 
+    background-color:#ffffff;
+    color: #021a1a;
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    margin-bottom: 1rem;
+    border: #ffffff 3px solid;
+    padding: 1rem 1rem;
+}
+
+.placeholder { 
+    color:  #021a1a;
+    font-size: clamp(1rem, 4vw, 1.4rem);    
+}
+
+.btn {
+    background-color:#02a693 ;
+    color: #ffffff;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem 1rem;
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+    border: #ffffff 2px solid;
+    box-shadow: 2px 4px 2px hwb(180 1% 90% / 0.462);
+}
+
+
+#error-message { 
+    background-color:#FF4D47;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    padding: 15px 10px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    header .logo img { 
+        width: 150px;
+        margin-left: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 900px){
+    main {
+        width: 90vw;
+    }
+
+    section {
+        padding: 50px 100px;
+    }
+
+    header {
+        grid-template-columns: 3fr 7fr 2fr;
+        padding: 2rem 2.5rem;
+    }
+
+    header nav {
+        display: contents;
+    }
+
+    header nav ul li a {
+        color:#021a1a ;
+        transition: 0.5s ease-in-out;
+    }
+
+    header nav ul li a:hover{
+        color: #FF4D47; 
+    }
+
+    nav ul li a {
+        display: block;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    footer {
+        display: none;
+    }
+
+    form {
+        padding: 2rem 2rem;
+    }
+
+    fieldset {
+        padding: 2rem 2rem;
+    }
+
+    }
+
+    @media only screen and (min-width: 1200px){
+
+        header .logo img { 
+            width: 200px;
+            margin-left: 100px;
+        }
+
+        nav ul li a {
+            font-size: 1.4rem;
+            font-weight: 900; 
+        }
+        
+        form {
+            padding: 2rem 4rem;
+        }
+
+        fieldset {
+            padding: 2rem 4rem;
+        }
+    }

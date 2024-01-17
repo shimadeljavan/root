@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--  css -->
+    <link rel="stylesheet" href="./css/log.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--  fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <section class="log-page-2">
+            <article class="logpage-logo">
+                <!-- ... (your existing logo and heading) ... -->
+            </article>
+            <article id="login">
+                <form id="login-form">
+                    <input type="text" name="username" placeholder="Username or Email" required>
+                    <br>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <br>
+                    <input type="submit" name="login_button" value="Login">
+                </form>
+                <div id="error-message"></div>
+            </article>
+            <a href="./register.html">
+                <p>If you do not have an account, register</p>
+            </a> 
+        </section>
+    </main>
+    <script src="./js/login.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  
+   
+    background-image: url("https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-76827.jpg?w=2000");
+}
+
+h4{
+    margin-top: 50px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    font-family:serif;
+}
+
+.links{
+    height: 200px;
+    width: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: 0.5;
+}
+ 
+    .btn{
+        margin-top: 50px;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #30A2FF;
+        color: white;
+        text-transform: uppercase;
+        transition: .5s;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        border-radius: 10px;
+        font-size: 14px;
+        border: 3px solid transparent;
+        opacity: 1 !important;
+    }
+    
+    .btn:hover{
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+        border-radius: 50%;
+    }

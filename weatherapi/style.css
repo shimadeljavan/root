@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./images/background.png");
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    font-family:cursive
+}
+
+.weather-icon{
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.weather h1{
+    font-size: 90px;
+    font-weight: 400;
+}
+
+.weather h3{
+
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+    
+}
+
+.col1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col1 img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 30px;
+    margin-top: -6px;
+}

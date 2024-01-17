@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 04- Group Project: Task Ticker</title>
+    <!--  Fransiskus -->
+    <!--  css -->
+    <link rel="stylesheet" href="./css/task-display.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--  google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,800;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!--  fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+    <header class="display-header">
+      <div class="logo-profile">
+          <a href="./showLists.html" class="logo">
+              <img src="./images/task-ticker-logo.png" alt="Task Ticker Logo" class="logo">           
+          </a>  
+          
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./showLists.html">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>  
+          </li>
+            <li>
+                <a href="./logout.html">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  Log Out
+                </a>
+            </li>
+        </ul>
+    </nav>
+      <div class="dark-mood">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+  </header> 
+    <!-- end menu -->
+    <section class="list-main">
+      <article class="text-box">
+        <div>
+          <h2>Manage Your Tasks with Ease</h2>
+          <h3>Edit, Delete, Conquer!</h3>
+        </div>
+        </div class="task-add">
+            <a href="./add-task.html" class="task-link">
+              <i class="fa-solid fa-circle-plus"></i>
+               New Task
+            </a>
+        </div>
+      </article>       
+      <article class="list-todo"></article>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="./showLists.html">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>  
+          </li>
+            <li>
+              
+              <a href="./add-task.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                Add Task
+              </a>  
+            </li>
+            <li>
+                <a href="./logout.html">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  Log Out
+                </a>
+            </li>
+        </ul>
+    </nav>
+  </footer> 
+    <script src="js/lists.js"></script>
+  </body>
+</html>

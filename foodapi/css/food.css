@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFCDA8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #56332B;
+    text-shadow: 5px 5px 5px #756810;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px; 
+    border: #56332B solid 2px;
+    margin-bottom: 20px;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0.9, 0.9);
+}
+
+.image-container {
+    display: inline-block; 
+    box-shadow: 0 2px 4px rgba(0, 0, 5,5);
+    
+}
+
+h2{
+    color: #56332B;
+    margin-bottom: 10px;
+    font-family:'Permanent Marker', cursive;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p{
+    color: #333333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height:18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+
+
+#ingredient{
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 0.733rem 1rem;
+    display: grid;
+    grid-template-columns: minmax(min-content, auto) 2fr;
+    color: #333333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#btn{
+    text-align: center;
+}
+
+a{
+text-decoration: none;
+ text-transform: uppercase;
+ padding: 10px 18px;
+ background-color: #00a693;
+ display: inline-block;
+ margin-top: 20px;
+ font-size: 16px;
+ font-weight: 700;
+ transition: 0.3s;
+ letter-spacing: 5px;
+ color:white; 
+ border-radius: 10px;
+ border: #56332B solid 2px;;
+ transition: 0.7s;
+ font-family:'Permanent Marker', cursive;
+ margin-bottom: 20px;
+}
+
+a:hover{
+    color:#56332B;
+    border: solid 2px #00a693;
+    background-color: #FFCDA8;
+
+} 
+
+@media only screen and (max-width: 480px){
+
+   
+    
+    
+    h1{
+        margin-bottom: 8px;
+        text-shadow: 5px 5px 5px #756810;
+    }
+    
+    img{
+        height: 150px;
+        width: 250px;
+    }
+    
+    h2{
+        margin-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    p{
+        line-height:20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 5px;
+    }
+    
+    #ingredient{
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 0.733rem 1rem;
+        display: grid;
+        grid-template-columns: minmax(min-content, auto) 2fr;
+    }
+
+    
+}
