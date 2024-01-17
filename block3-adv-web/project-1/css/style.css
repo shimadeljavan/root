@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+      
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #4caf50;
+    }
+
+    h2 {
+        color: #4caf50;     
+       }
+
+    p {
+        font-size: 20px;
+        color: black;
+        line-height: 1.5;
+    }
+    .btn-vendor {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .btn-vendor:hover {
+        background-color: #45a049;
+    }
+
+    .page{
+        border: #45a049 solid 2px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+        text-align: center;
+        box-shadow: gray 0px 0px 10px;
+    }
+
+    .grid-btn {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        margin-bottom: 20px;
+}
+
+
+
+.logo {
+text-decoration: none;
+margin-bottom: 20px;
+color: #4caf50;
+text-transform: capitalize;
+font-size: 20px;
+text-align: center;
+font-family: 'Parisienne', cursive;
+text-shadow: #333 1px 1px 1px;
+letter-spacing: 2px;
+margin-top: 20px;
+margin-bottom: 20px;
+font-weight: 400;
+line-height: 1.1;
+transition: all 0.3s ease-in-out;
+display: inline-block;
+cursor: pointer;
+}
+
+.logo:hover {
+transform: scale(0.9);
+}

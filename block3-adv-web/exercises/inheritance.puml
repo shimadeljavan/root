@@ -1,0 +1,154 @@
+@startuml
+
+class Animal {
+    + makeSound():
+}
+
+class Cat extends Animal {
+    + makeSound():
+}
+
+
+class Vehicle {
+    + drive():
+}
+
+class Car extends Vehicle{
+    + drive():
+}
+
+
+
+class Shape {
+    - name
+    + getArea()
+}
+
+class Rectangle extends Shape {
+    - length
+    - width
+    + __construct()
+}
+
+
+class Employee {
+    #salary
+    +__construct($salary)
+    +work()
+    +getSalary()
+}
+
+class maneger extends Employee{
+    +work
+    addEmployee()
+}
+
+class BankAccount{
+    #balance
+    +deposit(amount)
+    +withdraw(amount)
+    + getBalance()
+}
+
+class SavingsAccount extends BankAccount{
+    + withdraw(amount)
+}
+
+
+class Animals{
+    +name
+    +move()
+}
+
+class Dog extends Animals{
+    +move()
+}
+
+
+class Persons{
+    -firstName
+    -lastName
+    + __construct($firstName,$lastName)
+    +getFristName()
+    +getLastName
+}
+
+class Employees extends Persons{
+    -employeeId
+    -jobTitle
+    + __construct($firstName,$lastName,$employeeId,$jobTitle)
+    +getEmployeedId ()
+    +getLastName()
+}
+
+class shapes{
+    +getPerimeter()
+    +getArea()
+}
+
+class circle extends shapes{
+    -Radius
+    +__construct(Radius)
+    +getPerimeter()
+    +getArea()
+}
+
+class Vehicles{
+    -make
+    -model
+    -year
+    -fuel
+    + __construct($make,$model,$year,$fuel)
+    +calculatingFuelEfficiency()
+    +calculateDistanceTraveled()
+    +getMaxSpeed()
+}
+
+class truck extends Vehicles{
+    #other properties for truck
+    + calculateFuelEfficiency()
+   + calculateDistanceTraveled
+   + getMaxSpeed()
+}
+
+class Cars extends Vehicles{
+    #other properties for cars
+    + calculateFuelEfficiency()
+    + calculateDistanceTraveled
+    + getMaxSpeed()
+}
+
+class Motorcycle extends Vehicles{
+    #other properties for Motorcycle
+     + calculateFuelEfficiency()
+   + calculateDistanceTraveled
+   + getMaxSpeed()
+
+}
+
+class employeess{
+    #name
+    #address
+    #salary
+    #jobTitle
+     + __construct($name, $address, $salary, $jobTitle)
+     +calculateBonus()
+     +generatePerformanceReport()
+}
+
+class Manager extends employeess{
+    + manageProjects()
+    + calculateBonus()
+    +generatePerformanceReport()
+ }
+
+class Developer extends employeess{
+
+}
+
+class Programmer extends employeess{
+
+
+}
+
+@enduml

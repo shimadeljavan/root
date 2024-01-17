@@ -1,0 +1,41 @@
+@startuml
+
+class Supplier {
+  - name
+  - address
+  - contactNumber
+  +__construct($name, $address, $contactNumber)
+  -priceChange()
+  -supplierChange()
+}
+
+class Ingredient {
+  - name
+  - type
+  -supplierId
++__constracrut($name, $type, $supplierId )
+  -priceChange()
+  -supplierChange()
+}
+
+class Dish {
+  - name
+  - price
+  +__constracrut($name, $price)
+  + getIngredients()
+  +getPrice()
+}
+
+class FoodVendor {
+  - dishes
+  - suppliers
+  +__constracrut($dishes, $suppliers)
+  + addDish()
+  + removeDish()
+  + getDishes()
+  + addSupplier()
+  + removeSupplier()
+  + getSuppliers()
+}
+
+@enduml
